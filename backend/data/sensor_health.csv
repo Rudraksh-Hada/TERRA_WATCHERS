@@ -1,0 +1,5 @@
+sensorName,batteryLife,accuracy,lastUpdated
+Accelerometer,85,97,2025-12-16T10:30:00
+Inclinometer,78,95,2025-12-16T10:30:00
+Extensometer,72,93,2025-12-16T10:30:00
+Piezometer,69,92,2025-12-16T10:30:00

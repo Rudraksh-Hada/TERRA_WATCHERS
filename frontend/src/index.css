@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Light Theme - Mining Day Colors */
+    --background: 45 100% 96%;
+    --background-gradient-start: 45 88% 51%;
+    --background-gradient-end: 33 90% 51%;
+    
+    --foreground: 0 0% 20%;
+    --foreground-muted: 210 9% 62%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+    
+    --primary: 28 100% 63%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 0 0% 100%;
+    --secondary-foreground: 0 0% 20%;
+    
+    --muted: 210 20% 94%;
+    --muted-foreground: 210 9% 62%;
+    
+    --accent: 28 100% 63%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 6 78% 57%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 210 20% 90%;
+    --input: 210 20% 90%;
+    --ring: 28 100% 63%;
+    
+    --radius: 0.75rem;
+    
+    /* Sensor Colors */
+    --sensor-extensometer: 282 44% 47%;
+    --sensor-inclinometer: 204 70% 53%;
+    --sensor-piezometer: 187 100% 42%;
+    --sensor-accel-x: 24 80% 52%;
+    --sensor-accel-y: 45 88% 51%;
+    --sensor-accel-z: 145 63% 49%;
+    
+    /* Alert Colors */
+    --alert-warning: 45 88% 51%;
+    --alert-critical: 6 78% 57%;
+    --alert-normal: 145 63% 49%;
+    
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 20%;
+    --sidebar-primary: 28 100% 63%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 28 100% 63%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 210 20% 90%;
+    --sidebar-ring: 28 100% 63%;
+  }
+
+  .dark {
+    /* Dark Theme - Mining Night Colors */
+    --background: 220 26% 14%;
+    --background-gradient-start: 220 26% 14%;
+    --background-gradient-end: 220 26% 14%;
+    
+    --foreground: 210 20% 94%;
+    --foreground-muted: 210 9% 55%;
+    
+    --card: 192 10% 21%;
+    --card-foreground: 210 20% 94%;
+    
+    --popover: 0 0% 7%;
+    --popover-foreground: 210 20% 94%;
+    
+    --primary: 28 100% 63%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 192 10% 21%;
+    --secondary-foreground: 210 20% 94%;
+    
+    --muted: 192 10% 21%;
+    --muted-foreground: 210 9% 55%;
+    
+    --accent: 28 100% 63%;
+    --accent-foreground: 0 0% 100%;
+    
+    --destructive: 6 78% 57%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 0 0% 33%;
+    --input: 0 0% 33%;
+    --ring: 28 100% 63%;
+    
+    /* Sensor Colors - Same for dark */
+    --sensor-extensometer: 282 44% 55%;
+    --sensor-inclinometer: 204 70% 53%;
+    --sensor-piezometer: 187 100% 42%;
+    --sensor-accel-x: 24 80% 52%;
+    --sensor-accel-y: 45 88% 51%;
+    --sensor-accel-z: 145 63% 49%;
+    
+    --sidebar-background: 0 0% 7%;
+    --sidebar-foreground: 210 20% 94%;
+    --sidebar-primary: 28 100% 63%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 28 100% 63%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 33%;
+    --sidebar-ring: 28 100% 63%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Font size utilities */
+.font-size-small {
+  font-size: 14px;
+}
+
+.font-size-normal {
+  font-size: 16px;
+}
+
+.font-size-large {
+  font-size: 18px;
+}
+
+/* Font family utilities */
+.font-roman {
+  font-family: 'Times New Roman', serif;
+}
+
+.font-comic {
+  font-family: 'Comic Neue', cursive;
+}
+
+.font-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.font-opensans {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Background gradient for light theme */
+.bg-mining-gradient {
+  background: linear-gradient(135deg, hsl(var(--background-gradient-start)), hsl(var(--background-gradient-end)));
+}
