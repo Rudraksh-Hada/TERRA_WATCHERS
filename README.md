@@ -143,8 +143,3 @@ FUTURE ENHANCEMENTS
 • Environmental impact analysis using satellite data
 • Real-time alerts and notifications
 
-
-LICENSE
--------
-
-Specify a license before public release (e.g., MIT).
